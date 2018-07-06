@@ -1,9 +1,4 @@
-.flex-container {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center;
-  align-items: center; */
-}
+/***************** general styles ***************/
 
 body {
   margin: 0;
@@ -14,8 +9,6 @@ body {
 ul {
   list-style-type: none;
   display: flex;
-  /* justify-content: center; */
-  /* align-content: center; */
 }
 
 a {
@@ -23,9 +16,27 @@ a {
   color: rgb(3, 3, 3);
 }
 
+/***************** particle.js ***************/
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* -- particles.js container -- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1e26;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 /***************** header ***************/
 
-.background {
+/* .background {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +45,7 @@ a {
   z-index: -1;
   width: 100%;
   height: 100%;
-}
+} */
 
 .heading-wrap {
   display: flex;
@@ -46,47 +57,141 @@ h1 {
   color: white;
   position: relative;
   top: 350px;
+  letter-spacing: 3px;
+}
+
+.title-color {
+  color: #c83c24;
 }
 
 /***************** nav ***************/
 
 nav {
-  background-color: rgb(172, 169, 169);
+  background-color: #161a22;
   width: 100%;
-  height: 4em;
+  height: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  top: 55em;
+  top: 788px;
 }
 
-li {
-  margin: 0 4em;
+nav li {
+  margin: 0 2em;
   padding: 1.45em;
 }
 
+nav a {
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.active {
+  color: #ff4625;
+}
+
+/***************** main ***************/
+
 main {
-  background-color: rgba(128, 128, 128, 0.39);
+  background-color: rgba(252, 252, 252, 0.041);
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 55em;
+  top: 788px;
 }
 
 section {
-  height: 400px;
+  display: flex;
+  justify-content: center;
+  /* width: 95%;
+  margin: 0 auto; */
 }
 
 .alt-color {
-  background-color: white;
+  background-color: #ffffff;
+}
+
+/***************** main - projects***************/
+
+.projects {
+  height: 500px;
+  display: flex;
+}
+
+.project-container {
+}
+
+/***************** main - skills***************/
+
+.skills {
+  height: 500px;
+}
+
+.skills h2 {
+  color: white;
+}
+
+/***************** main - about***************/
+
+.about {
+  height: 500px;
+}
+
+/***************** main - divide***************/
+
+.divide {
+  height: 150px;
+}
+
+/***************** main - contact ***************/
+
+.contact {
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
 }
 
 /***************** footer ***************/
+
 footer {
-  background-color: rgb(71, 69, 69);
+  /* background-color: rgba(252, 252, 252, 0.041); */
   width: 100%;
-  height: 15em;
+  height: 260px;
   position: relative;
-  top: 60em;
+  top: 850px;
+  margin-top: -5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer p {
+  color: white;
+  margin-top: -0.5em;
+  letter-spacing: 0.1em;
+}
+
+p i {
+  color: white;
+  margin-bottom: -1em;
+}
+
+footer ul {
+  margin-left: -1em;
+}
+
+footer li {
+  padding: 1em;
+}
+
+a i {
+  color: white;
+}
+
+/***************** hover effects ***************/
+nav a:hover {
+  color: #ff4625;
 }
