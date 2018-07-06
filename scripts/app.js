@@ -54,22 +54,30 @@ particlesJS("particles-js", {
   },
   retina_detect: true
 });
-var count_particles, stats, update;
-stats = new Stats();
-stats.setMode(0);
-stats.domElement.style.position = "absolute";
-stats.domElement.style.left = "0px";
-stats.domElement.style.top = "0px";
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector(".js-count-particles");
-update = function() {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
 
 // ------ animations ------
+
+// ------ scroll then stick nav ------
+// $(window).on("scroll", function() {
+//   console.log("scolling");
+//   if (window.scrollTop > 943) {
+//     console.log("yay");
+//     $("#navbar").toggleClass("fixed");
+//   } else {
+//     $("#navbar").toggleClass("fixed");
+//   }
+// });
+
+$(window).scroll(function() {
+  //if you hard code, then use console
+  //.log to determine when you want the
+  //nav bar to stick.
+  console.log($(window).scrollTop());
+  if ($(window).scrollTop() > 948) {
+    $("#navbar").addClass("fixed");
+  }
+  if ($(window).scrollTop() < 949) {
+    $("#navbar").removeClass("fixed");
+  }
+});
+console.log("working");
