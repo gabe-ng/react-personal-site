@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-size: 16px;
+  font-family: "Raleway", sans;
   box-sizing: border-box;
 }
 
@@ -95,7 +96,6 @@ nav a {
   top: 0;
   width: 100%;
   z-index: 10;
-  overflow: hidden;
 }
 
 .active {
@@ -126,7 +126,7 @@ section {
 /***************** main - projects***************/
 
 .projects {
-  height: 500px;
+  height: 600px;
   display: flex;
 }
 
@@ -156,7 +156,7 @@ section {
 /***************** main - divide***************/
 
 .divide {
-  height: 150px;
+  height: 100px;
 }
 
 /***************** main - contact ***************/
@@ -165,6 +165,16 @@ section {
   height: 600px;
   flex-direction: column;
   align-items: center;
+}
+
+.contact p {
+  font-size: 2em;
+  color: #ff4625;
+}
+
+.contact a {
+  font-size: 1em;
+  font-style: italic;
 }
 
 /***************** footer ***************/

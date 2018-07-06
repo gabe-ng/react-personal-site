@@ -58,21 +58,8 @@ particlesJS("particles-js", {
 // ------ animations ------
 
 // ------ scroll then stick nav ------
-// $(window).on("scroll", function() {
-//   console.log("scolling");
-//   if (window.scrollTop > 943) {
-//     console.log("yay");
-//     $("#navbar").toggleClass("fixed");
-//   } else {
-//     $("#navbar").toggleClass("fixed");
-//   }
-// });
 
 $(window).scroll(function() {
-  //if you hard code, then use console
-  //.log to determine when you want the
-  //nav bar to stick.
-  console.log($(window).scrollTop());
   if ($(window).scrollTop() > 948) {
     $("#navbar").addClass("fixed");
   }
@@ -81,3 +68,14 @@ $(window).scroll(function() {
   }
 });
 console.log("working");
+
+// ------ smooth scroll ------
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
