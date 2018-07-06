@@ -67,7 +67,28 @@ $(window).scroll(function() {
     $("#navbar").removeClass("fixed");
   }
 });
-console.log("working");
+
+// ------ scroll then change active ------
+
+// REDO SIZING AFTER FINISHED
+$(window).scroll(function() {
+  console.log($(window).scrollTop());
+  if ($(window).scrollTop() > 755 && $(window).scrollTop() < 1250) {
+    $("#projects-nav").addClass("active");
+    $("#skills-nav").removeClass("active");
+  } else if ($(window).scrollTop() > 1251 && $(window).scrollTop() < 1750) {
+    $("#projects-nav").removeClass("active");
+    $("#about-nav").removeClass("active");
+    $("#skills-nav").addClass("active");
+  } else if ($(window).scrollTop() > 1751 && $(window).scrollTop() < 2250) {
+    $("#skills-nav").removeClass("active");
+    $("#contact-nav").removeClass("active");
+    $("#about-nav").addClass("active");
+  } else if ($(window).scrollTop() > 2250) {
+    $("#about-nav").removeClass("active");
+    $("#contact-nav").addClass("active");
+  }
+});
 
 // ------ smooth scroll ------
 
