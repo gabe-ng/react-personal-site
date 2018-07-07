@@ -41,17 +41,6 @@ canvas {
 
 /***************** header ***************/
 
-/* .background {
-  background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-} */
-
 .heading-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,9 +168,130 @@ section {
 .skills {
   height: 500px;
   background-color: #bbbbbb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills h2 {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+.skills .border {
+  position: relative;
+  top: -45px;
+  width: 10%;
+  border-bottom: 2.5px solid black;
+}
+
+.skill-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+#skillbar-wrap {
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+  width: 650px;
+}
+
+.skill-name {
+  width: 70px;
+  height: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+  clear: both;
+  float: left;
+  border-radius: 3px 0px 0px 3px;
+}
+
+#skill {
+  background-color: #161a22;
+}
+/* 
+#skill-css {
+  background-color: #5858fa;
+}
+
+#skill-js {
+  background-color: #04b404;
+}
+
+#skill-react {
+  background-color: #04b404;
+}
+
+#skill-node {
+  background-color: #04b404;
+}
+
+#skill-python {
+  background-color: #04b404;
+} */
+
+.skillbar-wrapper {
+  float: left;
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 500px;
+  background-color: #e6e6e6;
+  height: 30px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.skillbar-bar {
+  height: 30px;
+  width: 0px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+#skillbar-html,
+#skillbar-css,
+#skillbar-js,
+#skillbar-react,
+#skillbar-node,
+#skillbar-python {
+  background-color: #ff4625;
+}
+
+/* #skillbar-css {
+  background-color: #8181f7;
+}
+
+#skillbar-js {
+  background-color: #01df01;
+}
+
+#skillbar-react {
+  background-color: #01df01;
+}
+
+#skillbar-node {
+  background-color: #01df01;
+}
+
+#skillbar-python {
+  background-color: #01df01;
+} */
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 12px;
+  height: 30px;
+  line-height: 35px;
   color: black;
 }
 
@@ -189,6 +299,9 @@ section {
 
 .about {
   height: 500px;
+}
+
+.about h2 {
 }
 
 /***************** main - divide***************/
@@ -205,6 +318,7 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -219,7 +333,8 @@ section {
 
 .contact .border {
   margin-top: -0.8em;
-  width: 5%;
+  margin-bottom: 1em;
+  width: 10%;
   border-bottom: 2.5px solid white;
 }
 
@@ -230,6 +345,22 @@ section {
 
 .contact a {
   font-style: italic;
+  color: white;
+}
+
+.contact p a {
+  border-bottom: 1px solid white;
+}
+
+.contact ul {
+  margin-left: -1em;
+}
+
+.contact li {
+  padding: 1em;
+}
+
+a i {
   color: white;
 }
 
@@ -259,7 +390,7 @@ footer {
 
 footer p {
   color: white;
-  margin-top: -0.5em;
+  padding: 1em;
   letter-spacing: 0.1em;
 }
 
@@ -268,27 +399,9 @@ p i {
   margin-bottom: -1em;
 }
 
-footer ul {
-  margin-left: -1em;
-}
-
-footer li {
-  padding: 1em;
-}
-
-a i {
-  color: white;
-}
-
 /***************** hover effects ***************/
-nav a:hover {
-  color: #ff4625;
-}
-
-.contact a:hover {
-  border-bottom: 1.5px solid white;
-}
-
-footer i:hover {
+nav a:hover,
+footer i:hover,
+.contact i:hover {
   color: #ff4625;
 }

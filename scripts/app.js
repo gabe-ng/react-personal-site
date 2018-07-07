@@ -55,7 +55,15 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-// ------ animations ------
+// ------ skill animations ------
+$(document).ready(function() {
+  $("#skillbar-html").animate({ width: "55%" }, 1500);
+  $("#skillbar-css").animate({ width: "50%" }, 1500);
+  $("#skillbar-js").animate({ width: "50%" }, 1500);
+  $("#skillbar-react").animate({ width: "5%" }, 1500);
+  $("#skillbar-node").animate({ width: "5%" }, 1500);
+  $("#skillbar-python").animate({ width: "10%" }, 1500);
+});
 
 // ------ scroll then stick nav ------
 
