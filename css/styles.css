@@ -61,7 +61,7 @@ h1 {
   letter-spacing: 3px;
 }
 
-.title-color {
+.orange {
   color: #ff4625;
 }
 
@@ -131,20 +131,19 @@ section {
   justify-content: center;
 }
 
-.alt-color {
-  background-color: rgb(252, 252, 252);
-}
-
 /***************** main - projects***************/
 
 .projects {
-  height: 600px;
+  background-color: rgb(240, 240, 240);
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 5px;
 }
 
@@ -153,20 +152,77 @@ section {
   font-size: 2em;
 }
 
-/* .projects .border {
-  margin-top: -0.8em;
+.projects .border {
   width: 5%;
   border-bottom: 2.5px solid black;
-} */
+}
 
-/* .project-container {
-} */
+.project-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.project {
+  width: 31%;
+  margin: 0 auto;
+}
+
+figure {
+  text-align: center;
+  height: 425px;
+  background: white;
+  padding-top: 0.5em;
+  border-radius: 5%;
+  box-shadow: 0 8px 6px -6px black;
+  position: relative;
+  transition: 0.3s;
+}
+
+.project img {
+  width: 90%;
+  height: 90%;
+  border-radius: 5%;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.project h5 {
+  font-size: 1.3em;
+  padding-bottom: 0.5em;
+}
+
+.project p {
+  font-size: 1.1em;
+}
+
+.project a {
+  color: #ff4625;
+}
+
+.project h5,
+.project p {
+  color: white;
+  position: relative;
+  top: -300px;
+  letter-spacing: 1px;
+}
+
+.blurred-bg :not(img) {
+  z-index: 1;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+}
 
 /***************** main - skills***************/
 
 .skills {
   height: 600px;
-  /* background-color: #161a22; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,6 +327,7 @@ section {
 /***************** main - about***************/
 
 .about {
+  background-color: rgb(240, 240, 240);
   height: 500px;
   display: flex;
   justify-content: center;
@@ -288,6 +345,11 @@ section {
 
 .about h2 {
   font-size: 2em;
+}
+
+.about p {
+  width: 35%;
+  margin: 0 auto;
 }
 
 /***************** main - divide***************/
@@ -360,6 +422,7 @@ footer {
   position: relative;
   top: 850px;
   margin-top: -5em;
+  border-top: 2px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,11 +448,19 @@ p i {
   color: white;
   margin-bottom: -1em;
 }
-
 /***************** hover effects ***************/
 nav a:hover,
 footer i:hover,
 .contact a:hover,
 .contact i:hover {
   color: #ff4625;
+}
+
+.blurred-bg:hover img {
+  filter: blur(2px) brightness(60%);
+  box-shadow: 0 0 16px cyan;
+}
+
+.blurred-bg:hover :not(img) {
+  opacity: 1;
 }
