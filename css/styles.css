@@ -62,7 +62,7 @@ h1 {
 }
 
 .title-color {
-  color: #c83c24;
+  color: #ff4625;
 }
 
 /***************** nav ***************/
@@ -110,7 +110,7 @@ nav a {
 /***************** main ***************/
 
 main {
-  background-color: rgba(252, 252, 252, 0.041);
+  /* background-color: rgba(252, 252, 252, 0.062); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,12 +129,10 @@ section {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  /* width: 95%;
-  margin: 0 auto; */
 }
 
 .alt-color {
-  background-color: #ffffff;
+  background-color: rgb(252, 252, 252);
 }
 
 /***************** main - projects***************/
@@ -147,6 +145,7 @@ section {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
 .projects h2 {
@@ -166,37 +165,50 @@ section {
 /***************** main - skills***************/
 
 .skills {
-  height: 500px;
-  background-color: #bbbbbb;
+  height: 600px;
+  /* background-color: #161a22; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .skills h2 {
-  color: black;
+  color: white;
   font-size: 2em;
   text-align: center;
   position: relative;
-  top: -30px;
+  top: 10px;
 }
 
 .skills .border {
   position: relative;
-  top: -45px;
-  width: 10%;
-  border-bottom: 2.5px solid black;
+  top: -5px;
+  width: 6%;
+  border-bottom: 2.5px solid white;
 }
 
 .skill-flex {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.app-skills li {
+  margin: 1em;
+  font-size: 1.5em;
+  color: white;
+}
+
+.app-skills i {
+  padding: 0.5em;
+  color: #ff4625;
 }
 
 #skillbar-wrap {
+  display: block;
   margin: 0 auto;
   padding: 0px;
   text-align: center;
@@ -204,47 +216,28 @@ section {
 }
 
 .skill-name {
-  width: 70px;
+  width: 85px;
   height: 30px;
   line-height: 40px;
-  font-weight: bold;
-  font-size: 13px;
-  color: white;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1em;
+  color: black;
   clear: both;
   float: left;
   border-radius: 3px 0px 0px 3px;
 }
 
 #skill {
-  background-color: #161a22;
+  background-color: white;
 }
-/* 
-#skill-css {
-  background-color: #5858fa;
-}
-
-#skill-js {
-  background-color: #04b404;
-}
-
-#skill-react {
-  background-color: #04b404;
-}
-
-#skill-node {
-  background-color: #04b404;
-}
-
-#skill-python {
-  background-color: #04b404;
-} */
 
 .skillbar-wrapper {
   float: left;
   position: relative;
   display: block;
   margin-bottom: 15px;
-  width: 500px;
+  width: 550px;
   background-color: #e6e6e6;
   height: 30px;
   border-radius: 0px 3px 3px 0px;
@@ -265,26 +258,6 @@ section {
   background-color: #ff4625;
 }
 
-/* #skillbar-css {
-  background-color: #8181f7;
-}
-
-#skillbar-js {
-  background-color: #01df01;
-}
-
-#skillbar-react {
-  background-color: #01df01;
-}
-
-#skillbar-node {
-  background-color: #01df01;
-}
-
-#skillbar-python {
-  background-color: #01df01;
-} */
-
 .skill-bar-percent {
   position: absolute;
   right: 10px;
@@ -299,9 +272,22 @@ section {
 
 .about {
   height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.about .border {
+  position: relative;
+  top: -15px;
+  width: 5%;
+  border-bottom: 2.5px solid black;
 }
 
 .about h2 {
+  font-size: 2em;
 }
 
 /***************** main - divide***************/
@@ -322,7 +308,7 @@ section {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #161a22;
+  /* background-color: #161a22; */
 }
 
 .contact h2 {
@@ -334,7 +320,7 @@ section {
 .contact .border {
   margin-top: -0.8em;
   margin-bottom: 1em;
-  width: 10%;
+  width: 14%;
   border-bottom: 2.5px solid white;
 }
 
@@ -349,7 +335,8 @@ section {
 }
 
 .contact p a {
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
+  text-decoration: underline;
 }
 
 .contact ul {
@@ -402,6 +389,7 @@ p i {
 /***************** hover effects ***************/
 nav a:hover,
 footer i:hover,
+.contact a:hover,
 .contact i:hover {
   color: #ff4625;
 }
