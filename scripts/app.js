@@ -66,30 +66,80 @@ $(window).scroll(function() {
   }
 });
 
-// ------ scroll then change active ------
+// ------ scroll then change active accounting for screen width------
 
 $(window).scroll(function() {
   console.log($(window).scrollTop());
-  if ($(window).scrollTop() < 529) {
-    $("#projects-nav").removeClass("active");
-  } else if ($(window).scrollTop() > 530 && $(window).scrollTop() < 1300) {
-    $("#projects-nav").addClass("active");
-    $("#skills-nav").removeClass("active");
-  } else if ($(window).scrollTop() > 1301 && $(window).scrollTop() < 1905) {
-    $("#projects-nav").removeClass("active");
-    $("#about-nav").removeClass("active");
-    $("#skills-nav").addClass("active");
-  } else if ($(window).scrollTop() > 1906 && $(window).scrollTop() < 2440) {
-    $("#skills-nav").removeClass("active");
-    $("#contact-nav").removeClass("active");
-    $("#about-nav").addClass("active");
-  } else if ($(window).scrollTop() > 2441) {
-    $("#about-nav").removeClass("active");
-    $("#contact-nav").addClass("active");
-  }
 });
 
+if ($(window).width() >= 1400) {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() < 529) {
+      $("#projects-nav").removeClass("active");
+    } else if ($(window).scrollTop() > 530 && $(window).scrollTop() < 1300) {
+      $("#projects-nav").addClass("active");
+      $("#skills-nav").removeClass("active");
+    } else if ($(window).scrollTop() > 1301 && $(window).scrollTop() < 1905) {
+      $("#projects-nav").removeClass("active");
+      $("#about-nav").removeClass("active");
+      $("#skills-nav").addClass("active");
+    } else if ($(window).scrollTop() > 1906 && $(window).scrollTop() < 2440) {
+      $("#skills-nav").removeClass("active");
+      $("#contact-nav").removeClass("active");
+      $("#about-nav").addClass("active");
+    } else if ($(window).scrollTop() > 2441) {
+      $("#about-nav").removeClass("active");
+      $("#contact-nav").addClass("active");
+    }
+  });
+}
+
+if ($(window).width() >= 1185 && $(window).width() <= 1390) {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() < 365) {
+      $("#projects-nav").removeClass("active");
+    } else if ($(window).scrollTop() > 365 && $(window).scrollTop() < 1396) {
+      $("#projects-nav").addClass("active");
+      $("#skills-nav").removeClass("active");
+    } else if ($(window).scrollTop() > 1397 && $(window).scrollTop() < 1969) {
+      $("#projects-nav").removeClass("active");
+      $("#about-nav").removeClass("active");
+      $("#skills-nav").addClass("active");
+    } else if ($(window).scrollTop() > 1970 && $(window).scrollTop() < 2630) {
+      $("#skills-nav").removeClass("active");
+      $("#contact-nav").removeClass("active");
+      $("#about-nav").addClass("active");
+    } else if ($(window).scrollTop() > 2631) {
+      $("#about-nav").removeClass("active");
+      $("#contact-nav").addClass("active");
+    }
+  });
+}
+
+if ($(window).width() <= 1184) {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() < 474) {
+      $("#projects-nav").removeClass("active");
+    } else if ($(window).scrollTop() > 475 && $(window).scrollTop() < 1827) {
+      $("#projects-nav").addClass("active");
+      $("#skills-nav").removeClass("active");
+    } else if ($(window).scrollTop() > 1828 && $(window).scrollTop() < 2584) {
+      $("#projects-nav").removeClass("active");
+      $("#about-nav").removeClass("active");
+      $("#skills-nav").addClass("active");
+    } else if ($(window).scrollTop() > 2585 && $(window).scrollTop() < 2750) {
+      $("#skills-nav").removeClass("active");
+      $("#contact-nav").removeClass("active");
+      $("#about-nav").addClass("active");
+    } else if ($(window).scrollTop() > 2751) {
+      $("#about-nav").removeClass("active");
+      $("#contact-nav").addClass("active");
+    }
+  });
+}
+
 // ------ toggle mini nav ------
+
 $(".hamburger").on("click", function() {
   $(".mini-nav").toggleClass("show");
 });
@@ -142,8 +192,8 @@ $(window).scroll(function() {
       .addClass("fadeInRight");
     setTimeout(function() {
       $("#skillbar-html").animate({ width: "55%" }, 1500);
-      $("#skillbar-css").animate({ width: "50%" }, 1500);
-      $("#skillbar-js").animate({ width: "50%" }, 1500);
+      $("#skillbar-css").animate({ width: "55%" }, 1500);
+      $("#skillbar-js").animate({ width: "55%" }, 1500);
       $("#skillbar-react").animate({ width: "5%" }, 1500);
       $("#skillbar-node").animate({ width: "5%" }, 1500);
       $("#skillbar-python").animate({ width: "10%" }, 1500);

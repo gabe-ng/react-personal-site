@@ -199,6 +199,7 @@ figure {
 .project img {
   width: 90%;
   height: 90%;
+  margin: 10px;
   opacity: 0.7;
   border-radius: 5%;
   transition: 0.3s;
@@ -712,17 +713,7 @@ footer i:hover,
 @media only screen and (max-width: 757px) {
   figure {
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: 557px) {
-  .skill-name {
-    width: 45px;
-    font-size: 0.7em;
-  }
-
-  .skillbar-wrapper {
-    width: 400px;
+    margin: 10px auto;
   }
 }
 
@@ -747,5 +738,13 @@ footer i:hover,
 
   .skillbar-wrapper {
     width: 300px;
+  }
+
+  .about {
+    height: 700px;
+  }
+
+  .about h2 {
+    margin-top: 50px;
   }
 }
