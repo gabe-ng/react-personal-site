@@ -20,14 +20,9 @@ a {
   color: rgb(3, 3, 3);
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 /***************** particle.js ***************/
 canvas {
   display: block;
-  /* vertical-align: bottom; */
 }
 
 /* -- particles.js container -- */
@@ -71,7 +66,7 @@ h1 {
 
 /***************** nav ***************/
 
-nav {
+.main-nav ul {
   background-color: #161a22;
   width: 100%;
   height: 60px;
@@ -89,12 +84,12 @@ nav {
   border-bottom: 2px solid #ff9c4b;
 }
 
-nav li {
+.main-nav li {
   margin: 0 2em;
   padding: 1.45em;
 }
 
-nav a {
+.main-nav a {
   font-size: 1em;
   color: white;
   text-transform: uppercase;
@@ -111,10 +106,24 @@ nav a {
   color: #ff9c4b;
 }
 
+.mini-nav {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: none;
+}
+
+.hamburger i {
+  color: white;
+}
+
 /***************** main ***************/
 
 main {
-  /* background-color: rgba(252, 252, 252, 0.062); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +144,7 @@ section {
   justify-content: center;
 }
 
-/***************** main - projects***************/
+/***************** main - projects ***************/
 
 .projects {
   background-color: rgb(240, 240, 240);
@@ -227,7 +236,7 @@ figure {
   transition: 0.3s;
 }
 
-/***************** main - skills***************/
+/***************** main - skills ***************/
 
 .skills {
   height: 600px;
@@ -264,7 +273,6 @@ figure {
   margin: 1em;
   font-size: 1.5em;
   color: white;
-  /* transition: 2s all ease; */
 }
 
 .app-skills i {
@@ -333,7 +341,7 @@ figure {
   color: black;
 }
 
-/***************** main - about***************/
+/***************** main - about ***************/
 
 .about {
   background-color: rgb(240, 240, 240);
@@ -362,12 +370,6 @@ figure {
   margin: 0 auto;
 }
 
-/***************** main - divide***************/
-
-.divide {
-  height: 100px;
-}
-
 /***************** main - contact ***************/
 
 .contact {
@@ -380,7 +382,6 @@ figure {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /* background-color: #161a22; */
 }
 
 .contact h2 {
@@ -425,13 +426,11 @@ a i {
 /***************** footer ***************/
 
 footer {
-  /* background-color: rgba(252, 252, 252, 0.041); */
   width: 100%;
   height: 260px;
   position: relative;
   top: 850px;
   margin-top: -5em;
-  /* border-top: 2px solid white; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,5 +542,128 @@ footer i:hover,
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
+  }
+}
+
+/***************** Media Queries ***************/
+@media only screen and (max-width: 450px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 2em;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .show {
+    display: flex;
+    position: fixed;
+  }
+
+  .mini-nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .mini-nav li {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: rgb(58, 63, 90);
+    padding-top: 30px;
+    border: 2px solid white;
+  }
+  .mini-nav a {
+    color: white;
+    font-size: 1.6em;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+
+  figure {
+    height: 150px;
+    width: 160%;
+    margin-left: -25px;
+  }
+
+  .project p {
+    /* position: absolute; */
+  }
+
+  .skills {
+    height: 730px;
+  }
+
+  .app-skills ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-skills li {
+    font-size: 1.6em;
+  }
+
+  #skillbar-wrap {
+    width: 100%;
+  }
+
+  .skill-name {
+    width: 45px;
+    font-size: 0.7em;
+  }
+
+  .skillbar-wrapper {
+    width: 300px;
+  }
+
+  .about {
+    height: 630px;
+  }
+
+  .about h2 {
+    margin-top: -20px;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about p {
+    width: 90%;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin: 10px;
+  }
+
+  .contact p {
+    width: 70%;
+    line-height: 1.5;
+  }
+
+  .contact a {
+    padding: 20px;
   }
 }

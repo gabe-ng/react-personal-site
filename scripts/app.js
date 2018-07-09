@@ -89,6 +89,15 @@ $(window).scroll(function() {
   }
 });
 
+// ------ toggle mini nav ------
+$(".hamburger").on("click", function() {
+  $(".mini-nav").toggleClass("show");
+});
+
+$(".mini-nav a").on("click", function() {
+  $(".mini-nav").toggleClass("show");
+});
+
 // ------ smooth scroll ------
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
