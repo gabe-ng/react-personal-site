@@ -546,7 +546,7 @@ footer i:hover,
 }
 
 /***************** Media Queries ***************/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   body {
     width: 100%;
     margin: 0 auto;
@@ -605,8 +605,10 @@ footer i:hover,
     margin-left: -25px;
   }
 
+  .project h5,
   .project p {
-    /* position: absolute; */
+    font-size: 1em;
+    top: -140px;
   }
 
   .skills {
@@ -660,10 +662,12 @@ footer i:hover,
 
   .contact p {
     width: 70%;
+    margin: 0 auto;
     line-height: 1.5;
   }
 
-  .contact a {
-    padding: 20px;
+  .contact li {
+    margin: 0 auto;
+    padding: 40px;
   }
 }
