@@ -566,22 +566,20 @@ footer i:hover,
 }
 
 @media only screen and (max-width: 1186px) {
-  .app-skills li {
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 1186px) {
   .projects {
     height: 1400px;
   }
 
   .project {
-    width: 60%;
+    width: 52%;
   }
 
   figure {
     height: 375px;
+  }
+
+  .app-skills li {
+    font-size: 1em;
   }
 }
 
@@ -729,6 +727,19 @@ footer i:hover,
 }
 
 @media only screen and (max-width: 557px) {
+  .projects {
+    height: 1100px;
+  }
+
+  figure {
+    height: 300px;
+  }
+
+  .project p,
+  .project h5 {
+    top: -220px;
+  }
+
   .skill-name {
     width: 45px;
     font-size: 0.7em;
