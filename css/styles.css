@@ -66,7 +66,7 @@ h1 {
 }
 
 .orange {
-  color: #ff4625;
+  color: #ff9c4b;
 }
 
 /***************** nav ***************/
@@ -86,7 +86,7 @@ nav {
   align-items: center;
   position: relative;
   top: 788px;
-  border-bottom: 2px solid #c83c24;
+  border-bottom: 2px solid #ff9c4b;
 }
 
 nav li {
@@ -108,7 +108,7 @@ nav a {
 }
 
 .active {
-  color: #ff4625;
+  color: #ff9c4b;
 }
 
 /***************** main ***************/
@@ -267,7 +267,7 @@ figure {
 
 .app-skills i {
   padding: 0.5em;
-  color: #ff4625;
+  color: #ff9c4b;
 }
 
 #skillbar-wrap {
@@ -318,7 +318,7 @@ figure {
 #skillbar-react,
 #skillbar-node,
 #skillbar-python {
-  background-color: #ff4625;
+  background-color: #ff9c4b;
 }
 
 .skill-bar-percent {
@@ -396,7 +396,7 @@ figure {
 
 .contact p {
   font-size: 1.5em;
-  color: #ff4625;
+  color: #ff9c4b;
 }
 
 .contact a {
@@ -462,7 +462,7 @@ nav a:hover,
 footer i:hover,
 .contact a:hover,
 .contact i:hover {
-  color: #ff4625;
+  color: #ff9c4b;
 }
 
 .blurred-bg:hover img {
