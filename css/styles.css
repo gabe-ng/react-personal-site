@@ -80,7 +80,8 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: 886px;
+  top: 940px;
+  z-index: 10;
   border-bottom: 2px solid #ff9c4b;
 }
 
@@ -161,7 +162,7 @@ section {
 }
 
 .projects h2 {
-  margin-top: -1em;
+  margin-top: 2em;
   font-size: 2em;
 }
 
@@ -177,7 +178,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
 
 .project {
@@ -546,10 +546,64 @@ footer i:hover,
 }
 
 /***************** Media Queries ***************/
-@media only screen and (max-width: 500px) {
-  body {
-    width: 100%;
+
+@media only screen and (max-width: 1399px) {
+  .projects {
+    height: 1100px;
+  }
+
+  .project-container {
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 45%;
+  }
+
+  .app-skills li {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 1186px) {
+  .app-skills li {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1186px) {
+  .projects {
+    height: 1400px;
+  }
+
+  .project {
+    width: 60%;
+  }
+
+  figure {
+    height: 375px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .about h2 {
+    margin-top: -40px;
+  }
+
+  .contact p {
+    width: 75%;
     margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .contact li {
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 757px) {
+  body {
     font-size: 13px;
   }
 
@@ -571,13 +625,13 @@ footer i:hover,
 
   .show {
     display: flex;
-    position: fixed;
+    position: relative;
   }
 
   .mini-nav ul {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     width: 300px;
     margin: 0 auto;
   }
@@ -595,22 +649,6 @@ footer i:hover,
     font-size: 1.6em;
   }
 
-  .project-container {
-    flex-direction: column;
-  }
-
-  figure {
-    height: 150px;
-    width: 160%;
-    margin-left: -25px;
-  }
-
-  .project h5,
-  .project p {
-    font-size: 1em;
-    top: -140px;
-  }
-
   .skills {
     height: 730px;
   }
@@ -621,7 +659,8 @@ footer i:hover,
   }
 
   .app-skills li {
-    font-size: 1.6em;
+    font-size: 1.4em;
+    margin: 10px;
   }
 
   #skillbar-wrap {
@@ -629,12 +668,12 @@ footer i:hover,
   }
 
   .skill-name {
-    width: 45px;
+    width: 50px;
     font-size: 0.7em;
   }
 
   .skillbar-wrapper {
-    width: 300px;
+    width: 500px;
   }
 
   .about {
@@ -654,14 +693,14 @@ footer i:hover,
   }
 
   .about p {
-    width: 90%;
+    width: 80%;
     font-size: 1.1em;
     letter-spacing: 1px;
     margin: 10px;
   }
 
   .contact p {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     line-height: 1.5;
   }
@@ -669,5 +708,33 @@ footer i:hover,
   .contact li {
     margin: 0 auto;
     padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 757px) {
+  figure {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 557px) {
+  .skill-name {
+    width: 45px;
+    font-size: 0.7em;
+  }
+
+  .skillbar-wrapper {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 557px) {
+  .skill-name {
+    width: 45px;
+    font-size: 0.7em;
+  }
+
+  .skillbar-wrapper {
+    width: 300px;
   }
 }
