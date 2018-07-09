@@ -58,11 +58,13 @@ particlesJS("particles-js", {
 // ------ scroll then stick nav ------
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 948) {
+  if ($(window).scrollTop() > 878) {
     $("#navbar").addClass("fixed");
+    // .addClass("fadeinDown");
   }
-  if ($(window).scrollTop() < 949) {
+  if ($(window).scrollTop() < 879) {
     $("#navbar").removeClass("fixed");
+    // .removeClass("fadeinDown");
   }
 });
 
