@@ -20,10 +20,14 @@ a {
   color: rgb(3, 3, 3);
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /***************** particle.js ***************/
 canvas {
   display: block;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 
 /* -- particles.js container -- */
@@ -148,12 +152,14 @@ section {
 }
 
 .projects h2 {
-  margin-top: 2em;
+  margin-top: -1em;
   font-size: 2em;
 }
 
 .projects .border {
-  width: 5%;
+  width: 7%;
+  margin-top: -12px;
+  margin-bottom: 8px;
   border-bottom: 2.5px solid black;
 }
 
@@ -256,6 +262,7 @@ figure {
   margin: 1em;
   font-size: 1.5em;
   color: white;
+  /* transition: 2s all ease; */
 }
 
 .app-skills i {
@@ -345,6 +352,7 @@ figure {
 
 .about h2 {
   font-size: 2em;
+  margin-top: -120px;
 }
 
 .about p {
@@ -382,7 +390,7 @@ figure {
 .contact .border {
   margin-top: -0.8em;
   margin-bottom: 1em;
-  width: 14%;
+  width: 12%;
   border-bottom: 2.5px solid white;
 }
 
@@ -397,7 +405,6 @@ figure {
 }
 
 .contact p a {
-  /* border-bottom: 1px solid white; */
   text-decoration: underline;
 }
 
@@ -422,7 +429,7 @@ footer {
   position: relative;
   top: 850px;
   margin-top: -5em;
-  border-top: 2px solid white;
+  /* border-top: 2px solid white; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,7 +455,9 @@ p i {
   color: white;
   margin-bottom: -1em;
 }
+
 /***************** hover effects ***************/
+
 nav a:hover,
 footer i:hover,
 .contact a:hover,
@@ -463,4 +472,95 @@ footer i:hover,
 
 .blurred-bg:hover :not(img) {
   opacity: 1;
+}
+
+/* .line:nth-child(1) {
+  -webkit-animation-delay: 1s;
+}
+.line:nth-child(2) {
+  -webkit-animation-delay: 2s;
+} */
+
+/***************** keyframes and animations ***************/
+
+.animate-left {
+  visibility: visible;
+  animation-duration: 3s;
+  animation-name: slideleft;
+}
+
+@keyframes slideleft {
+  from {
+    margin-left: 100%;
+    /* width: 300%; */
+  }
+
+  to {
+    margin-left: 0%;
+    /* width: 100%; */
+  }
+}
+
+.fadeinDown {
+  -webkit-animation: fadeInDown 2000ms ease-in-out;
+  animation: fadeInDown 2000ms ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+.fadeinUp {
+  -webkit-animation: fadeInUp 1500ms ease-in-out;
+  animation: fadeInUp 1500ms ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation: fadeInLeft 1500ms ease-in-out;
+  animation: fadeInLeft 1500ms ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation: fadeInRight 1000ms ease-in-out;
+  animation: fadeInRight 1000ms ease-in-out;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
 }

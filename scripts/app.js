@@ -55,16 +55,6 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-// ------ skill animations ------
-$(document).ready(function() {
-  $("#skillbar-html").animate({ width: "55%" }, 1500);
-  $("#skillbar-css").animate({ width: "50%" }, 1500);
-  $("#skillbar-js").animate({ width: "50%" }, 1500);
-  $("#skillbar-react").animate({ width: "5%" }, 1500);
-  $("#skillbar-node").animate({ width: "5%" }, 1500);
-  $("#skillbar-python").animate({ width: "10%" }, 1500);
-});
-
 // ------ scroll then stick nav ------
 
 $(window).scroll(function() {
@@ -78,21 +68,22 @@ $(window).scroll(function() {
 
 // ------ scroll then change active ------
 
-// REDO SIZING AFTER FINISHED
 $(window).scroll(function() {
   console.log($(window).scrollTop());
-  if ($(window).scrollTop() > 755 && $(window).scrollTop() < 1250) {
+  if ($(window).scrollTop() < 529) {
+    $("#projects-nav").removeClass("active");
+  } else if ($(window).scrollTop() > 530 && $(window).scrollTop() < 1300) {
     $("#projects-nav").addClass("active");
     $("#skills-nav").removeClass("active");
-  } else if ($(window).scrollTop() > 1251 && $(window).scrollTop() < 1750) {
+  } else if ($(window).scrollTop() > 1301 && $(window).scrollTop() < 1905) {
     $("#projects-nav").removeClass("active");
     $("#about-nav").removeClass("active");
     $("#skills-nav").addClass("active");
-  } else if ($(window).scrollTop() > 1751 && $(window).scrollTop() < 2250) {
+  } else if ($(window).scrollTop() > 1906 && $(window).scrollTop() < 2440) {
     $("#skills-nav").removeClass("active");
     $("#contact-nav").removeClass("active");
     $("#about-nav").addClass("active");
-  } else if ($(window).scrollTop() > 2250) {
+  } else if ($(window).scrollTop() > 2441) {
     $("#about-nav").removeClass("active");
     $("#contact-nav").addClass("active");
   }
@@ -108,3 +99,81 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+// ------ content rendering on scroll ------
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 530) {
+    $("#projects h2")
+      .show()
+      .addClass("fadeInRight");
+    $(".project-container")
+      .show()
+      .addClass("fadeinUp");
+    setTimeout(function() {
+      $("#projects .border")
+        .show()
+        .addClass("fadeInRight");
+    }, 500);
+  }
+  if ($(window).scrollTop() > 1250) {
+    $("#skills h2")
+      .show()
+      .addClass("fadeInLeft");
+    setTimeout(function() {
+      $("#skills .border")
+        .show()
+        .addClass("fadeInLeft");
+    }, 500);
+    $(".app-skills")
+      .show()
+      .addClass("fadeInRight");
+    $("#skillbar-wrap")
+      .show()
+      .addClass("fadeInRight");
+    setTimeout(function() {
+      $("#skillbar-html").animate({ width: "55%" }, 1500);
+      $("#skillbar-css").animate({ width: "50%" }, 1500);
+      $("#skillbar-js").animate({ width: "50%" }, 1500);
+      $("#skillbar-react").animate({ width: "5%" }, 1500);
+      $("#skillbar-node").animate({ width: "5%" }, 1500);
+      $("#skillbar-python").animate({ width: "10%" }, 1500);
+    }, 500);
+  }
+  if ($(window).scrollTop() > 1720) {
+    $("#about h2")
+      .show()
+      .addClass("fadeinDown");
+    $(".about-me")
+      .show()
+      .addClass("fadeInRight");
+    setTimeout(function() {
+      $("#about .border")
+        .show()
+        .addClass("fadeinUp");
+    }, 500);
+  }
+  if ($(window).scrollTop() > 2130) {
+    $("#contact h2")
+      .show()
+      .addClass("fadeInRight");
+    $("#contact p")
+      .show()
+      .addClass("fadeInLeft");
+    $("#contact ul")
+      .show()
+      .addClass("fadeinUp");
+    setTimeout(function() {
+      $("#contact .border")
+        .show()
+        .addClass("fadeInLeft");
+    }, 500);
+  }
+});
+
+// ------ hide all content on page onload ------
+
+$(".project-container, #projects h2, #projects .border").hide();
+$("#skills h2, #skills .border, .app-skills, #skillbar-wrap").hide();
+$("#about h2, #about .border, .about-me").hide();
+$("#contact h2, #contact .border, #contact p, #contact ul").hide();
