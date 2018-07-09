@@ -66,7 +66,7 @@ $(window).scroll(function() {
   }
 });
 
-// ------ scroll then change active accounting for screen width------
+// ------ scroll then change active accounting for screen width ------
 
 $(window).scroll(function() {
   console.log($(window).scrollTop());
