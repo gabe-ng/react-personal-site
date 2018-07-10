@@ -58,10 +58,10 @@ particlesJS("particles-js", {
 // ------ scroll then stick nav ------
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 925) {
+  if ($(window).scrollTop() > 939) {
     $("#navbar").addClass("fixed");
   }
-  if ($(window).scrollTop() < 926) {
+  if ($(window).scrollTop() < 940) {
     $("#navbar").removeClass("fixed");
   }
 });
