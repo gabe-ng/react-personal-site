@@ -1,6 +1,6 @@
 # Personal Website
 
-This repository holds the code for my personal website. View the website [live](www.gabe-ng.gitub.io).
+This repository holds the code for my personal website. View the website [live](https://gabe-ng.github.io/).
 
 ## Motivation
 
