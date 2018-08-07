@@ -14,21 +14,33 @@ const navbar = () => {
             Projects
           </a>
         </li>
-      <li class="">
+        <li class="">
           <a id="skills" className="" href="#placeholder">
             Skills
           </a>
         </li>
-      <li class="">
+        <li class="">
           <a id="contact" className="" href="#placeholder">
             Contact
           </a>
         </li>
       </ul>
       <ul className="icons">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li>
+          <a href="http://www.github.com/gabe-ng" target="_blank">
+            <i className="fab fa-github" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/gabriel-n" target="_blank">
+            <i class="fab fa-linkedin-in" />
+          </a>
+        </li>
+        <li>
+        <a href="http://www.facebook.com/gabengatcal" target="_blank">
+            <i class="fab fa-facebook-f" />
+          </a>
+        </li>
       </ul>
     </div>;
 };

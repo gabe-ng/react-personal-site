@@ -1,18 +1,19 @@
 footer {
-    height: 100px;
+    height: 300px;
     width: 100%;
-    background: pink;
     display: flex;
-    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
-  color: white;
+  color: rgb(165, 164, 164);
   padding: 1em;
   letter-spacing: 0.1em;
 }
 
 p i {
-  color: white;
+  color: rgb(9, 201, 226);
   margin-bottom: -1em;
 }
