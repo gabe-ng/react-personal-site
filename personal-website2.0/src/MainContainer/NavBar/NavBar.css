@@ -1,26 +1,31 @@
 .main-nav {
-    background-color: red;
-    width: 100%;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 745px;
-    z-index: 10;
+  background-color: rgba(112, 112, 112, 0.603);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.main-nav li {
+.links li {
   display: flex;
   align-items: center;
   height: 100%;
-  background-color: blue;
-  padding: 0 1.5em;
+  padding: 0 2.5em;
 }
 
-.main-nav a {
-    font-size: 1em;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+.links a {
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+.icons li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 3em;
 }
 
 .fixed {
@@ -28,4 +33,16 @@
   top: 0;
   width: 100%;
   z-index: 10;
+}
+
+.active-li {
+  background-color: white;
+}
+
+a.active-a {
+  color: rgba(112, 112, 112);
+}
+
+.links li:hover {
+  background-color: rgba(119, 118, 118, 0.603);
 }

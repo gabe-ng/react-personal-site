@@ -2,26 +2,25 @@ import React from "react";
 import "./NavBar.css";
 
 const navbar = () => {
-  return (
-    <div className="main-nav">
+  return <div className="main-nav">
       <ul className="links">
-        <li>
-          <a id="about" className="nav" href="#placeholder">
+        <li class="active-li">
+          <a id="about" className="active-a" href="#placeholder">
             About
           </a>
         </li>
-        <li>
-          <a id="projects" className="nav" href="#placeholder">
+        <li class="">
+          <a id="projects" className="" href="#placeholder">
             Projects
           </a>
         </li>
-        <li>
-          <a id="skills" className="nav" href="#placeholder">
+      <li class="">
+          <a id="skills" className="" href="#placeholder">
             Skills
           </a>
         </li>
-        <li>
-          <a id="contact" className="nav" href="#placeholder">
+      <li class="">
+          <a id="contact" className="" href="#placeholder">
             Contact
           </a>
         </li>
@@ -31,8 +30,7 @@ const navbar = () => {
         <li>2</li>
         <li>3</li>
       </ul>
-    </div>
-  );
+    </div>;
 };
 
 export default navbar;

@@ -26,8 +26,8 @@
   flex-direction: column;
 }
 
-h1 {
-  color: Black;
+.main-title {
+  color: white;
   font-size: 3em;
   position: relative;
   top: 350px;
