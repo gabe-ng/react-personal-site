@@ -25,7 +25,8 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 1.5em;
+  padding: 0 1.3em;
+  font-size: 1.3em;
 }
 
 .icons i {
@@ -44,9 +45,13 @@
 }
 
 a.active-a {
-  color: rgba(112, 112, 112);
+  color: rgb(151, 208, 255);
 }
 
-.links li:hover {
-  background-color: rgba(119, 118, 118, 0.603);
+.links li:not(.active-li):hover  {
+  background-color: rgba(151, 208, 255, 0.603);
+}
+
+.icons i:hover {
+  color: rgb(151, 208, 255);
 }
