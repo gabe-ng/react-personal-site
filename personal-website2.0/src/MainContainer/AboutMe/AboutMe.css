@@ -8,9 +8,6 @@
 .about-me {
   position: relative;
   top: 50px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around; */
 }
 
 .title {
@@ -45,8 +42,6 @@
 }
 
 .info {
-  /* display: flex; */
-  /* justify-content: space-around; */
   width: 100%;
   margin: 3em auto;
 }

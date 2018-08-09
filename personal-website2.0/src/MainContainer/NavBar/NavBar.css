@@ -6,19 +6,16 @@
   justify-content: space-between;
 }
 
-.links li {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 2.5em;
-}
-
 .nav-item {
   font-size: 0.8em;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: white;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2.5em;
 }
 
 .icons li {
@@ -40,15 +37,12 @@
   z-index: 10;
 }
 
-.active-li {
+.active-nav-item {
+  color: rgb(151, 208, 255);
   background-color: white;
 }
 
-.active-nav-item {
-  color: rgb(151, 208, 255);
-}
-
-.links li:not(.active-li):hover  {
+.nav-item:not(.active-nav-item):hover {
   background-color: rgba(151, 208, 255, 0.603);
 }
 

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import "./MainContainer.css";
 import NavBar from "./NavBar/NavBar";
+import Home from "./Home/Home";
 import AboutMe from "./AboutMe/AboutMe";
 import Portfolio from "./Portfolio/Portfolio";
 import Skills from "./Skills/Skills";
@@ -17,8 +18,9 @@ class MainContainer extends Component {
         <Switch>
           <Route path="/contact" component={Contact} />
           <Route path="/skills" component={Skills} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/" component={AboutMe} />
+          <Route path="/projects" component={Portfolio} />
+          <Route path="/about" component={AboutMe} />
+          <Route path="/" exact component={Home} />
         </Switch>
         <Footer />
       </div>

@@ -1,31 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./NavBar.css";
 
-const navbar = () => {
+const Navbar = () => {
   return <div className="main-nav">
       <ul className="links">
-        <li className="active-li">
-          <Link className="nav-item active-nav-item" to="/">
+        <NavLink className="nav-item" activeClassName="active-nav-item" to="/about">
             About
-          </Link>
-        </li>
-        <li className="">
-          <Link className="nav-item" to="/projects">
+        </NavLink>
+        <NavLink className="nav-item" activeClassName="active-nav-item" to="/projects">
             Projects
-          </Link>
-        </li>
-        <li className="">
-          <Link className="nav-item" to="/skills">
+        </NavLink>
+        <NavLink className="nav-item" activeClassName="active-nav-item" to="/skills">
             Skills
-          </Link>
-        </li>
-        <li className="">
-          <Link className="nav-item" to="/contact">
+        </NavLink>
+        <NavLink className="nav-item" activeClassName="active-nav-item" to="/contact">
             Contact
-          </Link>
-        </li>
+        </NavLink>
       </ul>
       <ul className="icons">
         <li>
@@ -43,8 +35,13 @@ const navbar = () => {
             <i className="fab fa-facebook-f" />
           </a>
         </li>
+        <li>
+          <a href="mailto:gabe.f.ng@gmail.com?Subject=Hello!">
+            <i className="far fa-envelope" />
+          </a>
+        </li>
       </ul>
     </div>;
 };
 
-export default navbar;
+export default Navbar;

@@ -18,11 +18,23 @@ const aboutMe = () => {
             </p>
             <p>
               When I'm taking a break from my code, you can probably find me on
-                          a jog around San Francisco or at the gym. I love to explore new
-                          food recipes just as much as I enjoy taking a new framework or
-                          library head on. Sushi is my absolute favorite food, and if you
-                          asked me to recommend my go-to place, I would be
-              <a href="http://www.sushidelightsf.com/" target="_blank" rel="noopener noreferrer"> delighted</a> too.
+              a jog around San Francisco or at the gym. I love to explore new
+              food recipes just as much as I enjoy taking a new framework or
+              library head on. Sushi is my absolute favorite food, so if you
+              asked me to recommend my go-to place in SF, I would be
+              <a
+                href="http://www.sushidelightsf.com/"
+                target="_blank"
+                rel="noopener noreferrer">delighted</a>
+              too.
+            </p>
+            <p>
+              Thanks for stopping by! If you're interested in any of the inner
+              workings behind this site, check out the code
+              <a
+                href="https://github.com/gabe-ng/gabe-ng.github.io"
+                target="_blank"
+                rel="noopener noreferrer">here</a>.
             </p>
           </div>
         </div>
