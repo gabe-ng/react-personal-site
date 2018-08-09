@@ -13,7 +13,7 @@
   padding: 0 2.5em;
 }
 
-.links a {
+.nav-item {
   font-size: 0.8em;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -44,7 +44,7 @@
   background-color: white;
 }
 
-a.active-a {
+.active-nav-item {
   color: rgb(151, 208, 255);
 }
 

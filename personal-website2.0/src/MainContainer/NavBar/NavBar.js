@@ -1,43 +1,45 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./NavBar.css";
 
 const navbar = () => {
   return <div className="main-nav">
       <ul className="links">
         <li className="active-li">
-          <a id="about" className="active-a" href="#placeholder">
+          <Link className="nav-item active-nav-item" to="/">
             About
-          </a>
+          </Link>
         </li>
         <li className="">
-          <a id="projects" className="" href="#placeholder">
+          <Link className="nav-item" to="/projects">
             Projects
-          </a>
+          </Link>
         </li>
         <li className="">
-          <a id="skills" className="" href="#placeholder">
+          <Link className="nav-item" to="/skills">
             Skills
-          </a>
+          </Link>
         </li>
         <li className="">
-          <a id="contact" className="" href="#placeholder">
+          <Link className="nav-item" to="/contact">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <ul className="icons">
         <li>
-          <a href="http://www.github.com/gabe-ng" target="_blank">
+          <a href="http://www.github.com/gabe-ng" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github" />
           </a>
         </li>
         <li>
-          <a href="http://www.linkedin.com/in/gabriel-n" target="_blank">
+          <a href="http://www.linkedin.com/in/gabriel-n" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin-in" />
           </a>
         </li>
         <li>
-        <a href="http://www.facebook.com/gabengatcal" target="_blank">
+          <a href="http://www.facebook.com/gabengatcal" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook-f" />
           </a>
         </li>
