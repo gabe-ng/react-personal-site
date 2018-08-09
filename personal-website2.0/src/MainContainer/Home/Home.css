@@ -1,15 +1,17 @@
-.contact-container {
+.home-container {
   width: 100%;
   height: 1000px;
   background: white;
   text-align: center;
 }
 
-.home-link {
+.home-link, 
+.home a {
   color: rgb(151, 208, 255);
   border-bottom: 1px dotted rgb(151, 208, 255);
 }
 
-.home-link:hover {
+.home-link:hover,
+.home a:hover {
   color: rgb(181, 217, 247);
 }

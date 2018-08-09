@@ -10,16 +10,16 @@
   top: 50px;
 }
 
-.title {
+.about-me .title {
   display: block;
   position: relative;
-  color: black;
-  font-size: 1.5em;
+  color: rgb(112, 112, 112);
+  font-size: 2em;
   text-transform: uppercase;
 }
 
-.title:before,
-.title:after {
+.about-me .title:before,
+.about-me .title:after {
   content: "";
   display: block;
   position: absolute;
@@ -28,25 +28,25 @@
   border-top: solid 2px;
 }
 
-.title:before {
+.about-me .title:before {
   left: 0;
 }
 
-.title:after {
+.about-me .title:after {
   right: 0;
 }
 
-.title:before,
-.title:after {
+.about-me .title:before,
+.about-me .title:after {
   border-top-color: rgb(214, 210, 210);
 }
 
-.info {
+.about-me .info {
   width: 100%;
   margin: 3em auto;
 }
 
-.p-wrap {
+.about-me .p-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;

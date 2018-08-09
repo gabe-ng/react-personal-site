@@ -1,6 +1,70 @@
 .skills-container {
   width: 100%;
-  height: 1000px;
+  height: 100%;
   background: white;
   text-align: center;
+}
+
+.skills-container .title {
+  display: block;
+  position: relative;
+  color: rgb(112, 112, 112);
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 50px
+}
+
+.skills-container .title:before,
+.skills-container .title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  border-top: solid 2px;
+}
+
+.skills-container .title:before {
+  left: 0;
+}
+
+.skills-container .title:after {
+  right: 0;
+}
+
+.skills-container .title:before,
+.skills-container .title:after {
+  border-top-color: rgb(214, 210, 210);
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto 40px;
+}
+
+.skills article {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills h2 {
+  font-size: 1.5em;
+  color: rgb(112,112,112);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.skills i {
+  padding-right: .5em;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-list li {
+  font-size: 1.3em;
+  padding: .5em;
 }
