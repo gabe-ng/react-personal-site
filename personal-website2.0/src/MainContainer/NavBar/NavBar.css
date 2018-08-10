@@ -39,7 +39,7 @@
 
 .active-nav-item {
   color: rgb(151, 208, 255);
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .nav-item:not(.active-nav-item):hover {

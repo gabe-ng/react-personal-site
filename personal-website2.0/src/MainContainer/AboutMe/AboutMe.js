@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.css";
-import PicOfMe from "./me.jpg";
+import PicOfMe from "./headshot.jpg";
 
 const aboutMe = () => {
   return (
@@ -8,7 +8,9 @@ const aboutMe = () => {
       <section className="about-me">
         <h4 className="title">About Me</h4>
         <div className="info">
-          <img src={PicOfMe} alt="Gabriel" />
+          
+            <img src={PicOfMe} alt="Gabriel" />
+          
           <div className="p-wrap">
             <p>
               Hi! I'm a newly graduated college student with a background in
@@ -21,10 +23,15 @@ const aboutMe = () => {
               a jog around San Francisco or at the gym. I love to explore new
               food recipes just as much as I enjoy taking a new framework or
               library head on. Sushi is my absolute favorite food, so if you
-              asked me to recommend my go-to place in SF, I would be <a
+              asked me to recommend my go-to place in SF, I would be{" "}
+              <a
                 href="http://www.sushidelightsf.com/"
                 target="_blank"
-                rel="noopener noreferrer">delighted</a> too.
+                rel="noopener noreferrer"
+              >
+                delighted
+              </a>{" "}
+              too.
             </p>
           </div>
         </div>

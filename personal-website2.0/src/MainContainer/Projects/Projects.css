@@ -1,0 +1,38 @@
+.projects-container {
+  width: 100%;
+  height: 1000px;
+  background: whitesmoke;
+  text-align: center;
+}
+
+.projects .title {
+  display: block;
+  position: relative;
+  color: rgb(112, 112, 112);
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 50px
+}
+
+.projects .title:before,
+.projects .title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  border-top: solid 2px;
+}
+
+.projects .title:before {
+  left: 0;
+}
+
+.projects .title:after {
+  right: 0;
+}
+
+.projects .title:before,
+.projects .title:after {
+  border-top-color: rgb(214, 210, 210);
+}

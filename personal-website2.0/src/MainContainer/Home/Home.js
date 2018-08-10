@@ -18,8 +18,7 @@ const Home = () => {
         </Link>.
       </p>
       <p>
-        Thanks for stopping by! If you're interested in any of the inner
-        workings behind this site, check out the code <a
+        Source code for this site <a
           href="https://github.com/gabe-ng/gabe-ng.github.io"
           target="_blank"
           rel="noopener noreferrer">here</a>.

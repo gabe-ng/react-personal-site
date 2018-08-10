@@ -12,18 +12,6 @@ const skills = () => {
           </h2>
           <ul className="skill-list">
             <li>
-              <i className="fas fa-code" />HTML5
-            </li>
-            <li>
-              <i className="fas fa-code" />CSS3
-            </li>
-            <li>
-              <i className="fas fa-code" />Sass
-            </li>
-            <li>
-              <i className="fas fa-code" />Bootstrap
-            </li>
-            <li>
               <i className="fas fa-code" />JavaScript
             </li>
             <li>
@@ -32,6 +20,18 @@ const skills = () => {
             <li>
               <i className="fas fa-code" />Redux
             </li>
+            <li>
+              <i className="fas fa-code" />HTML5
+            </li>
+            <li>
+              <i className="fas fa-code" />CSS3
+            </li>
+            <li>
+              <i className="fas fa-code" />Bootstrap
+            </li>
+            <li>
+              <i className="fas fa-code" />Sass
+            </li>
           </ul>
         </article>
         <article className="back-end">
@@ -39,6 +39,12 @@ const skills = () => {
             <i className="fas fa-database" />Back-End
           </h2>
           <ul className="skill-list">
+            <li>
+              <i className="fas fa-angle-right" />Python
+            </li>
+            <li>
+              <i className="fas fa-angle-right" />Django
+            </li>
             <li>
               <i className="fas fa-angle-right" />Node.js
             </li>
@@ -50,12 +56,6 @@ const skills = () => {
             </li>
             <li>
               <i className="fas fa-angle-right" />Mongoose
-            </li>
-            <li>
-              <i className="fas fa-angle-right" />Python
-            </li>
-            <li>
-              <i className="fas fa-angle-right" />Django
             </li>
             <li>
               <i className="fas fa-angle-right" />RESTful API
@@ -83,13 +83,16 @@ const skills = () => {
               <i className="fas fa-wrench" />Command Line
             </li>
             <li>
+              <i className="fas fa-wrench" />Gulp
+            </li>
+            <li>
+              <i className="fas fa-wrench" />NPM
+            </li>
+            <li>
               <i className="fas fa-wrench" />Postman
             </li>
             <li>
               <i className="fas fa-wrench" />Heroku
-            </li>
-            <li>
-              <i className="fas fa-wrench" />NPM
             </li>
           </ul>
         </article>
