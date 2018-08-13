@@ -18,17 +18,7 @@
   padding: 0 2.5em;
 }
 
-.icons li {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 1.3em;
-  font-size: 1.3em;
-}
 
-.icons i {
-    color: white;
-}
 
 .fixed {
   position: fixed;
@@ -44,8 +34,4 @@
 
 .nav-item:not(.active-nav-item):hover {
   background-color: rgba(151, 208, 255, 0.603);
-}
-
-.icons i:hover {
-  color: rgb(151, 208, 255);
 }

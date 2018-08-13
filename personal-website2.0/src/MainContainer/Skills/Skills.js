@@ -7,19 +7,30 @@ const skills = () => {
       <div className="skills">
         <h1 className="title">Skill Set</h1>
         <section className="skill-list-wrap">
+          <article className="languages">
+            <h2>
+              <i className="far fa-object-group" /> Languages
+            </h2>
+            <ul className="skill-list">
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>SQL</li>
+            </ul>
+          </article>
+
           <article className="front-end">
             <h2>
               <i className="far fa-object-group" /> Front-End
             </h2>
             <ul className="skill-list">
               <li>
-                <i className="fas fa-code" />JavaScript
-              </li>
-              <li>
                 <i className="fas fa-code" />React
               </li>
               <li>
                 <i className="fas fa-code" />Redux
+              </li>
+              <li>
+                <i className="fas fa-code" />jQuery
               </li>
               <li>
                 <i className="fas fa-code" />HTML5
@@ -28,10 +39,10 @@ const skills = () => {
                 <i className="fas fa-code" />CSS3
               </li>
               <li>
-                <i className="fas fa-code" />Bootstrap
+                <i className="fas fa-code" />Sass
               </li>
               <li>
-                <i className="fas fa-code" />Sass
+                <i className="fas fa-code" />Bootstrap
               </li>
             </ul>
           </article>
@@ -40,9 +51,6 @@ const skills = () => {
               <i className="fas fa-database" />Back-End
             </h2>
             <ul className="skill-list">
-              <li>
-                <i className="fas fa-angle-right" />Python
-              </li>
               <li>
                 <i className="fas fa-angle-right" />Django
               </li>
@@ -59,13 +67,10 @@ const skills = () => {
                 <i className="fas fa-angle-right" />Mongoose
               </li>
               <li>
-                <i className="fas fa-angle-right" />RESTful API
-              </li>
-              <li>
                 <i className="fas fa-angle-right" />PostgreSQL
               </li>
               <li>
-                <i className="fas fa-angle-right" />SQL
+                <i className="fas fa-angle-right" />RESTful API
               </li>
             </ul>
           </article>
@@ -75,19 +80,22 @@ const skills = () => {
             </h2>
             <ul className="skill-list">
               <li>
-                <i className="fas fa-wrench" />Git
-              </li>
-              <li>
-                <i className="fas fa-wrench" />Github
+                <i className="fas fa-wrench" />Git & Github
               </li>
               <li>
                 <i className="fas fa-wrench" />Command Line
               </li>
               <li>
+                <i className="fas fa-wrench" />Npm & Yarn
+              </li>
+              <li>
                 <i className="fas fa-wrench" />Gulp
               </li>
               <li>
-                <i className="fas fa-wrench" />NPM
+                <i className="fas fa-wrench" />Bower
+              </li>
+              <li>
+                <i className="fas fa-wrench" />Webpack
               </li>
               <li>
                 <i className="fas fa-wrench" />Postman
