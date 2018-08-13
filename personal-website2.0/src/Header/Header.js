@@ -10,19 +10,20 @@ class Header extends Component {
   };
 
   render() {
-    return <div className="header-wrap">
+    return (
+      <div className="header-wrap">
         <section id="intro" className="intro">
           <h1 className="main-title">
             Hi, I'm
             <span> Gabriel Ng</span>
           </h1>
-          <h1 className="second-title pushEffect">
+          <h1 className="second-title slidingVertical">
             I'm a
-              <span> fullstack web developer</span>
-              <span> dog lover</span>
-              <span> software engineer</span>
-              <span> board game enthusiast</span>
-              <span> ambitious learner</span>
+            <span> fullstack web developer</span>
+            <span> dog lover</span>
+            <span> software engineer</span>
+            <span> board game enthusiast</span>
+            <span> quick learner</span>
           </h1>
         </section>
         <header id="title-link" className="">
@@ -30,7 +31,8 @@ class Header extends Component {
             Gabriel{" "}
           </Link>
         </header>
-      </div>;
+      </div>
+    );
   }
 }
 
