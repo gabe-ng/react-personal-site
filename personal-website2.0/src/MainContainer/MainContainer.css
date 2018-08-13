@@ -4,7 +4,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    position: relative;
-    top: 81vh;
+    margin: 7rem auto 0;
 }

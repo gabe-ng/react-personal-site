@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.contact {
+  padding: 0 5em;
+}
+
 .contact .title {
   display: block;
   position: relative;
@@ -35,4 +39,20 @@
 .contact .title:before,
 .contact .title:after {
   border-top-color: rgb(214, 210, 210);
+}
+
+.icons li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1.3em;
+  font-size: 1.3em;
+}
+
+.icons i {
+    color: black;
+}
+
+.icons i:hover {
+  color: rgb(151, 208, 255);
 }

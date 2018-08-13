@@ -9,7 +9,7 @@ const aboutMe = () => {
         <h4 className="title">About Me</h4>
         <div className="info">
           
-            <img src={PicOfMe} alt="Gabriel" />
+          <img src={PicOfMe} alt="Gabriel" />
           
           <div className="p-wrap">
             <p>

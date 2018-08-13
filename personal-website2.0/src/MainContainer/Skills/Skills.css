@@ -5,7 +5,11 @@
   text-align: center;
 }
 
-.skills-container .title {
+.skills {
+  padding: 0 5em;
+}
+
+.skills .title {
   display: block;
   position: relative;
   color: rgb(112, 112, 112);
@@ -14,8 +18,8 @@
   margin-top: 50px
 }
 
-.skills-container .title:before,
-.skills-container .title:after {
+.skills .title:before,
+.skills .title:after {
   content: "";
   display: block;
   position: absolute;
@@ -24,20 +28,20 @@
   border-top: solid 2px;
 }
 
-.skills-container .title:before {
+.skills .title:before {
   left: 0;
 }
 
-.skills-container .title:after {
+.skills .title:after {
   right: 0;
 }
 
-.skills-container .title:before,
-.skills-container .title:after {
+.skills .title:before,
+.skills .title:after {
   border-top-color: rgb(214, 210, 210);
 }
 
-.skills {
+.skill-list-wrap {
   display: flex;
   justify-content: space-around;
   margin: 50px auto 40px;

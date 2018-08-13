@@ -8,6 +8,7 @@
 .about-me {
   position: relative;
   top: 50px;
+  padding: 0 5em;
 }
 
 .about-me .title {
@@ -60,14 +61,14 @@
 }
 
 .about-me img {
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
   border-radius: 100%;
   margin: 0 auto 2em;
 }
 
 .about-me p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: rgb(112, 112, 112);
   letter-spacing: 1px;
   line-height: 1.3;

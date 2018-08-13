@@ -1,0 +1,59 @@
+.header-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  text-align: center;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition: opacity 1s ease, transform 1s ease;
+  min-height: 100vh;
+}
+
+.main-title {
+  color: white;
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+
+.second-title {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+
+.header-wrap header {
+  margin-top: -13rem;
+}
+
+.title-link {
+  color: white;
+  pointer-events: auto;
+  border-style: solid;
+  border-width: 5px !important;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 1rem 1.75rem;
+  text-transform: uppercase;
+  transform: translateY(0);
+  transition: border-color 0.1s ease-in-out, color 0.1s ease-in-out,
+    opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+  /* visibility: hidden;   */
+}
+
+.title-link:hover {
+  color: rgb(151, 208, 255);
+}
