@@ -8,21 +8,29 @@ class Header extends Component {
     const w = window;
     let intro = document.getElementById("intro");
     let link = document.getElementById("title-link");
-    let pos = 250;
+    let pos = 210;
 
     w.onscroll = () => {
       if (window.pageYOffset > pos) {
-        intro.classList.add("hidden");
+
         intro.classList.remove("fadeinDown");
-
+        link.classList.remove("fadeoutDown");
         link.classList.remove("hidden");
+        intro.classList.add("fadeoutUp");
         link.classList.add("fadeinUp");
+        setTimeout(() => {
+          intro.classList.add("hidden");
+        }, 200);
       } else if (window.pageYOffset < pos) {
-        intro.classList.remove("hidden");
-        intro.classList.add("fadeinDown");
 
-        link.classList.add("hidden");
+        intro.classList.add("fadeinDown");
+        intro.classList.remove("hidden");
+        intro.classList.remove("fadeoutUp");
+        link.classList.add("fadeoutDown");
         link.classList.remove("fadeinUp");
+        setTimeout(() => {
+          link.classList.add("hidden");
+        }, 200);
       }
     };
   };
@@ -36,11 +44,12 @@ class Header extends Component {
             <span> Gabriel Ng</span>
           </h1>
           <h1 className="second-title slidingVertical">
-            I'm a<span> fullstack web developer</span>
-            <span> dog lover</span>
+            -
             <span> software engineer</span>
+            <span> dog lover</span>
+            <span> fullstack developer</span>
             <span> board game enthusiast</span>
-            <span> quick learner</span>
+            <span> ambitious learner</span>
           </h1>
         </section>
         <header id="title-link" className="hidden">
